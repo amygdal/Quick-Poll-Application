@@ -1,8 +1,0 @@
-io/zipcoder/springdemo/domain/Vote.class
-io/zipcoder/springdemo/controller/PollController.class
-io/zipcoder/springdemo/repo/PollRepository.class
-io/zipcoder/springdemo/QuickPollApplication.class
-io/zipcoder/springdemo/domain/Option.class
-io/zipcoder/springdemo/domain/Poll.class
-io/zipcoder/springdemo/repo/OptionRepository.class
-io/zipcoder/springdemo/repo/VoteRepository.class
