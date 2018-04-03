@@ -3,10 +3,12 @@ package io.zipcoder.springdemo.repo;
 import io.zipcoder.springdemo.domain.Vote;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by leon on 7/18/17.
  */
+@Repository
 public interface VoteRepository extends CrudRepository<Vote, Long> {
     @Query(value = "SELECT v.* " +
             "FROM Option o, Vote v " +
