@@ -8,13 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class PollController {
+    @Autowired
+    private PollService pollService;
 
-   private PollService pollService;
-
-   @Autowired
-   public PollController(PollService pollService) {
-       this.pollService = pollService;
-   }
+    public PollController(PollService pollService) {
+        this.pollService = pollService;
+    }
 
     @RequestMapping(value = "/polls", method = RequestMethod.POST)
     public ResponseEntity<?> createPoll(@RequestBody Poll poll) {
