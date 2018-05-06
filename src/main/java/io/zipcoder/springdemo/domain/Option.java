@@ -1,24 +1,39 @@
 package io.zipcoder.springdemo.domain;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Option {
+public class Option{
+
     @Id
     @GeneratedValue
-    @Column(name = "OPTION_ID")
+    @Column
     private Long id;
-    @Column(name = "OPTION_VALUE")
+
+    @Column
     private String value;
 
-    public Long getId() {
+    public void setId(Long id){
+        this.id = id;
+    }
+
+    public Long getId(){
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setValue(String value){
+        this.value = value;
     }
+
+    public String getValue(){
+        return value;
+    }
+
+
+
+
 }

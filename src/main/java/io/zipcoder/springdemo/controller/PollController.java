@@ -2,7 +2,6 @@ package io.zipcoder.springdemo.controller;
 
 import javax.inject.Inject;
 
-import io.zipcoder.springdemo.domain.Poll;
 import io.zipcoder.springdemo.repo.PollRepository;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

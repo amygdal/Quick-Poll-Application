@@ -1,6 +1,5 @@
 package io.zipcoder.springdemo.repo;
 
-import io.zipcoder.springdemo.domain.Poll;
 import org.springframework.data.repository.CrudRepository;
 
 /**
